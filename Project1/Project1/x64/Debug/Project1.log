@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: 中繼目錄 (x64\Debug\) 包含從其他專案 (B123040004_1.vcxproj, Project1.vcxproj) 共用的檔案。這可能導致錯誤的清除和重建行為。
+  B123040004.c
+C:\Users\q9402\OneDrive\文件\c-learning\Project1\Project1\B123040004.c(29,8): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+C:\Users\q9402\OneDrive\文件\c-learning\Project1\Project1\B123040004.c(29,19): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+  Project1.vcxproj -> C:\Users\q9402\OneDrive\文件\c-learning\Project1\x64\Debug\B123040004.exe

@@ -1,0 +1,110 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
+#include<math.h>
+int main(){
+	//1. 
+	
+	srand(time(NULL));
+	int arr1[10][10],arr2[51]={0},i,j,k,random,sum1=0,max=0,count1=0,count2=0;
+	float median,standard_deviation,sum2=0.0,mean;
+	//生成100個亂數在1~50間 
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			arr1[i][j]=rand()%50+1;
+			printf("%5d",arr1[i][j]);
+		}
+		printf("\n");
+	}
+	//將各種數字有幾個統計起來 
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			arr2[arr1[i][j]]++;	
+		}
+	}
+	printf("\n");
+	//把各種數字有幾個羅列出來 
+	for(k=1;k<51;k++){
+		printf("%4d:%3d",k,arr2[k]);
+		if(k%5==0)
+			printf("\n");
+	}
+	//算總和及平均 
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			sum1+=arr1[i][j];
+		}
+	}
+	mean=sum1/100.0;
+	//算眾數 
+	for(i=1;i<51;i++){
+		if(arr2[i]>max)
+			max=i;
+	}
+	//算中位數
+	for(i=1;i<51;i++){
+		count1+=arr2[i];
+		if(count1>=50){
+			if(count1>50){
+				median=(i+i)/2.0;
+			}
+			else if(count1==50){
+				median=(i+i+1)/2.0;
+			}
+			break;
+		}
+	} 
+	//算標準差 
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			sum2+=(arr1[i][j]-mean)*(arr1[i][j]-mean);
+		}
+	}
+	standard_deviation=(sum2/100.0);
+	standard_deviation=sqrt(standard_deviation);
+	
+	//印出所有結果 
+	printf("\n");
+	printf("Mean:%f\n",mean);
+	printf("Mode:%d\n",max);
+	printf("Median:%f\n",median);
+	printf("Standard Deviation:%f",standard_deviation);
+	printf("\n\n\n");
+	
+	//2.
+	
+	//列出奇數
+	printf("odd:\n"); 
+	for(i=1;i<51;i++){
+		for(j=1;j<=arr2[i];j++){
+			if(count2==10)
+			{
+				printf("\n");
+				count2*=0;
+			}
+			if(i%2!=0)
+			{
+				printf("%4d",i);
+				count2++;
+			}
+		}
+	}
+	printf("\n\n");
+	count2*=0;
+	//列出偶數 
+	printf("even:\n");
+		for(i=1;i<51;i++){
+		for(j=1;j<=arr2[i];j++){
+			if(count2==10)
+			{
+				printf("\n");
+				count2*=0;
+			}
+			if(i%2==0)
+			{
+				printf("%4d",i);
+				count2++;
+			}
+		}
+	}
+} 

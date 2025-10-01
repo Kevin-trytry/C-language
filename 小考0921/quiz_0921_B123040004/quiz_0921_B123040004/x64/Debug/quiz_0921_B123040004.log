@@ -1,0 +1,4 @@
+﻿  quiz_0921_B123040004_2.c
+  LINK : 最後的累加連結找不到或未建置 C:\Users\q9402\OneDrive\文件\c-learning\quiz_0921_B123040004\x64\Debug\quiz_0921_B123040004.exe，正在執行完整連結
+quiz_0921_B123040004_2.obj : error LNK2005: main 已在 quiz_0921_B123040004_1.obj 中定義過了
+C:\Users\q9402\OneDrive\文件\c-learning\quiz_0921_B123040004\x64\Debug\quiz_0921_B123040004.exe : fatal error LNK1169: 找到有一或多個已定義的符號

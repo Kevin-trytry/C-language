@@ -1,0 +1,6 @@
+﻿  quiz_B123040004_6.c
+C:\Users\q9402\OneDrive\文件\c-learning\quiz_B123040004_6\quiz_B123040004_6\quiz_B123040004_6.c(5,8): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+C:\Users\q9402\OneDrive\文件\c-learning\quiz_B123040004_6\quiz_B123040004_6\quiz_B123040004_6.c(6,8): warning C4305: '正在初始化': 從 'double' 轉換為 'float'，是由較大的類型轉換為較小的類型，可能導致資料遺失
+C:\Users\q9402\OneDrive\文件\c-learning\quiz_B123040004_6\quiz_B123040004_6\quiz_B123040004_6.c(9,28): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+C:\Users\q9402\OneDrive\文件\c-learning\quiz_B123040004_6\quiz_B123040004_6\quiz_B123040004_6.c(10,14): warning C4244: '正在初始化': 將 'double' 轉換為 'float'，由於類型不同，可能導致資料遺失
+  quiz_B123040004_6.vcxproj -> C:\Users\q9402\OneDrive\文件\c-learning\quiz_B123040004_6\x64\Debug\quiz_B123040004_6.exe
